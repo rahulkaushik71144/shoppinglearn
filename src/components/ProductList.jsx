@@ -14,6 +14,7 @@ const products = [
 ];
 
 const ProductList = ({addToCart}) =>
+
 {
 
 return(
@@ -23,6 +24,10 @@ return(
             {products.map((product)=>(
                 <li key={product.id}>
                 {product.name} - ${product.price.toFixed(2)}
+                <button onClick={()=> addToCart(product)}>
+                  Add To cart
+
+                </button>
                 </li>
             ))}
         </ul>

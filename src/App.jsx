@@ -13,8 +13,8 @@ const App = () =>
   return(
     <div> 
       <Header />
-      <ProductList addToCart =  />
-
+      <ProductList addToCart = {addToCart} />
+      <Cart cartItems = {cartItems} />
     </div>
   );
 };
