@@ -13,7 +13,7 @@ const products = [
   },
 ];
 
-const ProductList = () =>
+const ProductList = ({addToCart}) =>
 {
 
 return(

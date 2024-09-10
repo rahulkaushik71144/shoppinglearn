@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './components/Header.jsx'
 import '/home/rahul/Desktop/shoppinglearn/App.css';
 
 import ProductList from './components/ProductList.jsx';
 const App = () =>
 {
+  const [cartItems, setCartItems] = useState([]);
+  const addToCart = (product) =>
+    {
+      setCartItems(...cartItems, product);
+    } ;
   return(
     <div> 
       <Header />
-      <ProductList />
+      <ProductList addToCart =  />
 
     </div>
   );
