@@ -7,7 +7,23 @@ const products = [
 ];
 const ProductDetails = () =>
 {
-    
-}
+    const {productId} = useParams();
+    product = products.find((p)=>p.id===parseInt(productId));
+    if (!product){
+        return <p>Product not found</p>
+
+    }
+    return(
+        <div>
+            <h2>{product.name}</h2>
+
+            <p>Price: ${product.price}</p>
+            <p>
+                {product.description}
+            </p>
+        </div>
+    );
+
+};
 
 
