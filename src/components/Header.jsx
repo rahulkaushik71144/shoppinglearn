@@ -30,7 +30,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <h1>Simple Shopping Site</h1>
+      <h1>Simple Shoepping Site</h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
